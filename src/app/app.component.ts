@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-
+import {Component, NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {BrowserModule} from '@angular/platform-browser';
 
 export  class Hero {
   id:number;
@@ -12,6 +13,10 @@ export  class Hero {
               <h1>{{title}}</h1>
               <h1>{{hero.name}}</h1>
               <p>{{hero.id}}</p>
+              <div>
+                <!--<input [(ngModel)]="hero.name"/>-->
+                <input [(ngModel)]="hero.name" placeholder="name">
+              </div>
             
   `,
 })
